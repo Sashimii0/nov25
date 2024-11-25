@@ -36,7 +36,8 @@ body {
     background-image: url(Assets/Full_Bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    margin-right: 0;
+    margin: 0;
+    
 }
 
 

@@ -43,12 +43,12 @@ body {
 
 
 .background-img {
+    position: absolute; top: 0; left: 0;
     width: 100vw;
-    overflow: hidden;
 }
 
 .space{
-    margin-bottom: 1800px;
+    margin-bottom: 2100px;
     text-align: center;
 }
 .btn{

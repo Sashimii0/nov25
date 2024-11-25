@@ -36,6 +36,7 @@ body {
     background-image: url(Assets/Full_Bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-right: 0;
 }
 
 
@@ -77,7 +78,7 @@ body {
     margin-right: auto;
     z-index: 50;
     animation: shake 0.8s linear infinite;
-    position: absolute; left: 36.5%; top: 600%; z-index: 5;
+    position: absolute; left: 36.5%; top: 500%; z-index: 5;
     clip: auto;
 }
 

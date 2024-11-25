@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name = "viewport" content = "width=device-width,initial-scale = 1.1">
+        <title> Nov 25, 2024  </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <img class="background-img" src="Assets/Full_Bg.png">
+            <div class="space"></div>
+        
+            <img src="Assets/Phone-button.png" type="submit" class="phone_btn" onclick="openPopup_story()">
+
+            <div class="popupstory" id="popupstory">
+                <div id="gallerywrapper">
+                    <div id="gallery">
+                        <div id="pic1">
+                            <img src="Assets/Screen off.png" height="300" width="430" alt="Image 4">
+                            <h4>ตึ๊ง&#33;</h4>
+                            <a class="previous" href="#pic12">&lt;</a>
+                            <a class="next" href="#pic2">&gt;</a>
+                        </div>
+                        <div id="pic2">
+                            <img src="Assets/Screen on.png" height="300" width="430" alt="Image 5">
+                            <h4>คุณได้รับข้อความใหม่</h4>
+                            <br>
+                            <a class="choice1" href="#pic3">อ่าน</a>
+                            <a class="choice2" href="#pic21">ปิด</a>
+                        </div>
+                        <div id="pic21">
+                            <img src="Assets/Screen off.png" height="300" width="430" alt="Image 4">
+                            <h4>&#x2026;</h4>
+                            <a class="next" href="#pic22">&gt;</a>
+                        </div>
+                        <div id="pic22">
+                            <img src="Assets/Screen on.png" height="300" width="430" alt="Image 5">
+                            <h4>ดูเหมือนว่าโทรศัพท์มือถือจะสว่างขึ้นมาอีกแล้ว&#33;</h4>
+                            <br>
+                            <a class="choice1" href="#pic3">อ่าน</a>
+                            <a class="choice2" href="#pic21">ปิด</a>
+                        </div>
+                        <div id="pic3">
+                            <img src="Assets/Calendar.png" height="300" width="430" alt="Image 1">
+                            <h4>25 พฤษจิกา&#x2026; วันนี้วันอะไรกันนะ</h4>
+                            <a class="previous" href="#pic2">&lt;</a>
+                            <a class="next" href="#pic4">&gt;</a>
+                        </div>
+                        <div id="pic4">
+                            <img src="Assets/Many_Mook.png" height="300" width="430" alt="Image 1">
+                            <h4>วันเกิดไข่มุกไง&#33;&#33; &#40;&#40;มุกเต็มไปหมดเลย รูปนี้ก็มุก&#41;&#41;</h4>
+                            <a class="previous" href="#pic3">&lt;</a>
+                            <a class="next" href="#pic5">&gt;</a>
+                        </div>
+                        <div id="pic5">
+                            <img src="Assets/Hoop.png" height="300" width="430" alt="Image 2">
+                            <h4>&#34;Happy birthday นะคับ โตขึ้นอีกปีแล้ว&#34;</h4>
+                            <a class="previous" href="#pic4">&lt;</a>
+                            <a class="next" href="#pic6">&gt;</a>
+                        </div>
+                        <div id="pic6">
+                            <img src="Assets/Does_Stuff_Ori.png" height="300" width="430" alt="Image 2">
+                            <h4>&#34;มีความสุขมาก ๆ คับ ขอให้ไม่เจออะไรที่ทำให้เสียใจบ่อย ๆ&#34;</h4>
+                            <a class="previous" href="#pic5">&lt;</a>
+                            <a class="next" href="#pic7">&gt;</a>
+                        </div>
+                        <div id="pic7">
+                            <img src="Assets/Does_Stuff_Ori.png" height="300" width="430" alt="Image 2">
+                            <h4>&#34;ขอให้ไม่มีอะไรมาทำให้หนักใจ ทำอะไรก็ขอให้เป็นไปตามที่คิด&#34;</h4>
+                            <a class="previous" href="#pic6">&lt;</a>
+                            <a class="next" href="#pic8">&gt;</a>
+                        </div>
+                        <div id="pic8">
+                            <img src="Assets/Ka_moo.png" height="300" width="430" alt="Image 2">
+                            <h4>&#34;แล้วก็ขอให้ไข่มุกเป็นไข่มุกที่น่ารักแบบนี้ต่อไปเรื่อย ๆ เลยนะ&#34;</h4>
+                            <a class="previous" href="#pic7">&lt;</a>
+                            <a class="next" href="#pic9">&gt;</a>
+                        </div>
+                        <div id="pic9">
+                            <img src="Assets/Ka_moo_shade.png" height="300" width="430" alt="Image 2">
+                            <h4>&#34;ที่จะบอกมีแค่นี้แหละ&#34; &#40;&#40;อวยพรไม่เก่งง่ะ&#41;&#41;</h4>
+                            <a class="previous" href="#pic8">&lt;</a>
+                            <a class="next" href="#pic10">&gt;</a>
+                        </div>
+                        <div id="pic10">
+                            <img src="Assets/Screen off.png" height="300" width="430" alt="Image 4">
+                            <h4>ตึ๊ง&#33;</h4>
+                            <a class="previous" href="#pic9">&lt;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="callout" data-closable>
+                    <button onclick="closePopup_story()" id="closepopupstory" class="close-button" aria-label="Dismiss alert"
+                        type="button" data-close>
+                        Close
+                    </button>
+                </div>
+            </div>
+            <div class="optionTazaku" id="optionTazaku">
+                <p> Card color: </p>
+                <p> </p><br>
+                <span id="1" onclick ="color(this)" class = "cl cl_1"></span>
+                <span id="2" onclick="color(this)" class="cl cl_2"></span>
+                <span id="3" onclick="color(this)" class="cl cl_3"></span>
+                <span id="4" onclick="color(this)" class="cl cl_4"></span>
+                <span id="5" onclick="color(this)" class="cl cl_5"></span>
+                <span id="6" onclick="color(this)" class="cl cl_6"></span>
+                <span id="7" onclick="color(this)" class="cl cl_7"></span>
+                <span id="8" onclick="color(this)" class="cl cl_8"></span>
+            </div>
+        </div>
+        
+        <script src = "script.js"> </script>
+    </body>
+</html>

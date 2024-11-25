@@ -37,7 +37,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
-    
+    background-position: 0 0;
+    z-index: 1;
 }
 
 
